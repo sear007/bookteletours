@@ -1,0 +1,73 @@
+# Laravel specific files
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+/storage/app/public
+/storage/debugbar
+/storage/logs
+/storage/framework/sessions
+/storage/framework/views
+/storage/framework/cache
+/bootstrap/cache
+
+# Environment files
+.env
+.env.*.php
+.env.php
+
+# Laravel generated files
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/public/testcoverage
+/public/testcoverage.xml
+
+# IDE and editor specific files
+.idea
+.phpunit.result.cache
+.phpstorm.meta.php
+.vscode
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+
+# Composer vendor folder
+composer.lock
+
+# NPM packages
+node_modules
+
+# Yarn packages
+yarn-error.log
+
+# Laravel Mix
+npm-debug.log
+yarn.lock
+yarn-debug.log
+yarn-error.log
+npm-debug.log.*
+
+# Local environment specific files
+Homestead.yaml
+Homestead.json
+.vagrant
+
+# Logs
+*.log
+
+# Ignoring coverage report files
+/coverage
+.phpunit.result.cache
+
+# Ignoring test result files
+/testoutput
+/testoutput.xml
+/testcoverage
+/testcoverage.xml
