@@ -1,0 +1,173 @@
+.filter-section {
+    position: relative;
+    top: -20px;
+    left: 0;
+    color: #000;
+    background: #81CF7E;
+    padding: 5px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.filter-section .dropdown-toggle{
+    position: relative;
+    height: 100%;
+    min-height: 45px;
+    border: 0px;
+    padding: 0 20px 0 37px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s all;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    opacity: .6;
+    width: 100%;
+}
+
+.filter-section .dropdown-toggle:hover{
+    background: #000;
+    outline: 0;
+    border: 0;
+}
+
+.filter-section .dropdown-toggle .btn{
+    position: relative;
+}
+
+.filter-section .dropdown-toggle::before{
+    position: absolute;
+    content: '\f601';
+    font-weight: bold;
+    top: 7px;
+    left: 10px;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    color: #eee;
+}
+
+
+.filter-section .btn-search {
+    position: relative;
+    height: 100%;
+    min-height: 45px;
+    border: 0px;
+    padding: 0 20px 0 37px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s all;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    opacity: .6;
+}
+.filter-section .btn-search::after {
+    position: absolute;
+    content: '\f054';
+    font-weight: bold;
+    top: 4px;
+    left: 18px;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    color: #eee;
+}
+.filter-section .btn-search:focus,
+.filter-section .btn-search:active {
+    outline: 0;
+}
+.filter-section .input-group {
+    padding: 5px;
+    background-color: #fff;
+    position: relative;
+}
+
+.filter-section input,
+.filter-section .input-group-text {
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.filter-section input::placeholder {
+    color: #000;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.filter-section .form-control:focus,
+.filter-section .form-control:active {
+    border-color: #81CF7E;
+}
+
+.filter-section input:-ms-input-placeholder {
+    color: #000;
+}
+
+.filter-section input::-ms-input-placeholder {
+    color: #000;
+}
+
+.filter-section {
+    display: inline-flex;
+    gap: 5px;
+}
+
+.filter-section .__drop-down {
+    display: none;
+    position: absolute;
+    /* display: inline-table; */
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: #fff;
+    z-index: 2;
+    border: 1px solid #ddd;
+    transform: translateY(50px);
+}
+
+#__close-drop-down{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+}
+
+.filter-section .__drop-down .title {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.filter-section .__drop-down a {
+    display: block;
+    padding: 10px 35px;
+    margin: 0;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    color: #000;
+    position: relative;
+}
+.filter-section .__drop-down a::after{
+    position: absolute;
+    content: '\f601';
+    font-weight: bold;
+    inset: 0;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    color: #ccc;
+    transform: translate(10px, 7px);
+}
+
+@media (max-width:768px) {
+    .filter-section {
+        display: flex;
+        flex-flow: column;
+    }
+    .vacation-offer-details {
+        transform: translateY(-80%);
+    }
+}

@@ -1,0 +1,53 @@
+.footer {
+    position: relative;
+    background: red;
+    display: block;
+    min-height: 250px;
+    padding: 20px;
+    background-image: url('../images/bg_4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.footer::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    content: ' ';
+    background: rgba(0,0,0, .8);
+    z-index: -1;
+}
+.footer-logo{
+    width: 168px;
+    margin-bottom: 10px;
+}
+.footer-inner {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    font-size: 16px;
+}
+.footer a{
+    color: #fff;
+    display: block;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer .title {
+    font-weight: bold;
+    font-size: 23px;
+}
+.footer .d-flex {
+    gap: 10px;
+}
+.footer .fa, .footer .fas, .footer .fa-brands,.footer .fab {
+    margin-top: 5px;
+}
+.footer .payment {
+    width: 100%;
+    margin-bottom: 10px;
+}

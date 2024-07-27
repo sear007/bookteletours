@@ -1,0 +1,62 @@
+.vacation-offer-block {
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+}
+
+.vacation-offer-bgbanner h1,
+.vacation-offer-bgbanner h4 {
+    color: #fff;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.vacation-offer-bgbanner {
+    background: #80cf7e;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
+
+.vacation-offer-bgbanner::before {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -50%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-30deg);
+    width: 100%;
+}
+
+.vacation-offer-details>h1 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.vacation-offer-details .btn.btn-default {
+    background: none 0px 0px repeat scroll rgb(255, 65, 87);
+    border: medium none;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 35px;
+    padding: 8px 12px;
+    text-shadow: 0px 0px 0px;
+    text-transform: capitalize;
+}
+
+.container-show-page {
+    position: relative;
+    top: -80px;
+}
