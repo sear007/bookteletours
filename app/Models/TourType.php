@@ -24,7 +24,7 @@ class TourType extends Model
   public function tour()
   {
     return $this->belongsTo(Branch::class, 'branch_id')
-      ->select(['id', 'name', 'name_other', 'address', 'long', 'lat']);
+      ->select(['id', 'name', 'name_other', 'address', 'long', 'lat', 'photo']);
   }
   public function tourTimes()
   {
