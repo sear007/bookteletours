@@ -3,7 +3,9 @@
 @section('content')
 	@include('components.home-slider')
 	<div class="container">
-		@include('components.forms.filter')
+		{{-- @include('components.forms.filter') --}}
+		@include('components.forms.filter_site')
+		@include('components.popular-tours')
 		@include('components.popular-hotels')
 		@include('components.what-is-tele-tour')
 		@include('components.popular-sites')

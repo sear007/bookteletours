@@ -21,10 +21,13 @@
                 <p class="text-black-50">{{ $item->short_description }}</p>
             @endif
           </div>
-          <div>
-            <h5 class="price">{{price($item->price_solo)}}
-              <span>/pax</span>
-            </h5>
+          <div style="width: 120px">
+            @if($item->price_solo > 0)
+              <h6 class="text-primary font-weight-bold mb-0">{{price($item->price_solo)}} <small> / pax</small> </h6>
+            @endif
+            @if($item->price_group > 0)
+              <h6 class="text-primary font-weight-bold mb-0">{{price($item->price_group)}} <small> / pax</small> </h6>
+            @endif
           </div>
       </div>
       <div class='_card-detail-footer'>

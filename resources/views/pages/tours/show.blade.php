@@ -4,7 +4,7 @@
     @include('components.banner', [
         'title' => $tour->name,
         'subTitle' => $tour->name_other,
-        'background' => $tour->featureImage->filename,
+        'background' => $tour->photo,
     ]);
 
     <div class="container container-show-page">

@@ -29,6 +29,7 @@ class ToursController extends Controller
         return $q->where('province_id', $request->province);
       })
       ->paginate();
+    $tours;
     return view('pages.tours.index', compact('tours'));
   }
   public function show(Request $request){

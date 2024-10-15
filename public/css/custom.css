@@ -1,3 +1,13 @@
+.nav-item.active > a {
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+}
+.scrolled .nav-item.active > a {
+  background: transparent;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
 .payment-description span {
   display: block;
   line-height: 1.3;

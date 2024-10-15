@@ -21,6 +21,7 @@ class TourScope implements Scope
       'short_description',
       'short_description_kh',
       'province_id',
+      'photo',
     ])
     ->where('branch_type_id', 3);
   }

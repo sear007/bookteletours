@@ -6,8 +6,11 @@
     <div class="row no-gutters slider-text align-items-center justify-content-end">
     <div class="col-md-6 ftco-animate">
         <div class="text">
-            <h2>More than a hotel... an experience</h2>
-            <h1 class="mb-3">Hotel for the whole family, all year round.</h1>
+            <h5 class="mb-3 text-white text-center">
+                <span class='d-block'>The premier online local tour operator offering the opportunity to discover and book the finest tours and unique experiences in cities across Cambodia. Partnering directly with local vendors, we provide exceptional value and daily interactions with locals.
+                </span>
+                Genuine experiences at unbeatable rates!
+            </h5>
         </div>
     </div>
     </div>
@@ -19,8 +22,11 @@
     <div class="row no-gutters slider-text align-items-center justify-content-end">
     <div class="col-md-6 ftco-animate">
         <div class="text">
-            <h2>TELETOUR HOTELS &amp; RESORTS</h2>
-            <h1 class="mb-3">It feels like staying in your own home.</h1>
+            <h5 class="mb-3 text-white text-center">
+                <span class='d-block'>The premier online local tour operator offering the opportunity to discover and book the finest tours and unique experiences in cities across Cambodia. Partnering directly with local vendors, we provide exceptional value and daily interactions with locals.
+                </span>
+                Genuine experiences at unbeatable rates!
+            </h5>
         </div>
     </div>
     </div>

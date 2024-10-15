@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="https://payway.ababank.com/checkout-popup.html?file=css"/>
   
   <link rel="stylesheet" href="{{asset('css/footer.css')}}"/>
+  <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}"/>
   @stack('stylesheet')
 
   <title>@yield('title')</title>

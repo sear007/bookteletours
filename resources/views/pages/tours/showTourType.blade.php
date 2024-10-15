@@ -18,24 +18,30 @@
                         <div>
                             <div class="d-flex align-items-start">
                                 <div style="display: flex; flex-direction: column;">
-                                    <p class="h3 text-primary mb-0">
+                                    <div class="d-flex align-items-center">
+                                        <a href="{{route('tour.show', $tourType->tour->id)}}"><i class="fa fa-chevron-left fa-2x mr-3"></i></a>
                                         <a href="{{ route('tour.show', [$tourType->tour->id]) }}">
-                                            {{ $tourType->tour->name }}<br>
-                                            {{ $tourType->tour->name_other }}
+                                            <h3 class="text-muted mb-0">{{ $tourType->tour->name }}</h3>
+                                            <h5 class="text-primary font-weight-bold">{{ $tourType->tour->name_other }}</h5>
                                         </a>
-                                    </p>
-                                    <div style="line-height: 0" class="mb-3">
-                                        <p class="text-primary font-weight-bold h5 mb-0">{{ $tourType->name }}</p>
-                                        <p class="text-secondary font-weight-bold h6 mb-0">{{ $tourType->name_kh }}</p>
                                     </div>
                                 </div>
                             </div>
                             <p class="small text-muted mb-2"><i class="mr-2 fa fa-map"></i>{{ $tourType->tour->address }}
                             </p>
+
+                            <div style="line-height: 0" class="mb-3">
+                                <p class="text-primary font-weight-bold h5 mb-0 h3">{{ $tourType->name }}</p>
+                                <p class="text-secondary font-weight-bold h6 mb-0">{{ $tourType->name_kh }}</p>
+                            </div>
                         </div>
                         <div>
-                            <h4 class="text-primary font-weight-bold mb-0">{{ price($tourType->price_solo) }}/<sub>pax</sub> </h2>
-                            <h4 class="text-primary font-weight-bold mb-2">{{ price($tourType->price_group) }}/<sub>pax</sub></h2>
+                            @if($tourType->price_solo > 0)
+                                <h4 class="text-primary font-weight-bold mb-0">{{ price($tourType->price_solo) }}<small> / pax</small></h2>
+                            @endif
+                            @if($tourType->price_group > 0)
+                                <h4 class="text-primary font-weight-bold mb-2">{{ price($tourType->price_group) }}<small> / pax</small></h2>
+                            @endif
                             <a href="{{ route('tour.showCheckout', [$tourType->id]) }}"
                                 class="btn btn-sm btn-primary text-dark w-100 font-weight-bold">Book Now</a>
                         </div>
@@ -44,7 +50,7 @@
                     <div class="bg-light border p-2">
                         @if ($tourType->description)
                             <h5>Description</h5>
-                            <pre>{{ $tourType->description }}</pre>
+                            <p>{{ $tourType->description }}</pre>
                         @endif
                         @if ($tourType->term_condition)
                             <h5>Terms and conditions</h5>
@@ -76,3 +82,4 @@
     @endpush
 
 @endsection
+

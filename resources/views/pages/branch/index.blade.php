@@ -1,14 +1,23 @@
 @extends('layouts.app')
 @section('title', 'TeleTour || Hotel Master\'s Rooms')
 @section('content')
-	@include('components.banner', ['title' => 'Hotel', 'subTitle' => ' Master\'s Rooms', 'background' => ''])
+	@include('components.banner', [
+		'title' => '', 
+		'subTitle' => '', 
+		'text' => 'Discover the finest accommodations in your desired Cambodian city. We offer a curated selection of options, ranging from charming guesthouses to luxurious 5-star hotels. Explore our budget-friendly choices and book your ideal stay today!', 
+		'background' => ''
+		])
 	<div class="container">
 		<div class="p-2"></div>
-		@include('components.forms.filter')
+		{{-- @include('components.forms.filter') --}}
+		@include('components.forms.filter_site')
 	</div>
 	<div class="ftco-section ftco-no-pb ftco-room content-rooms">
 		<div class="container-fluid px-0">
 			<div class="container">
+				<div class="heading-section text-center ftco-animate">
+					<h2 class="mb-4">Popular Hotels</h2>
+				</div>
 				<div class="row">
 					@forelse($branch as $key => $hotel)
 						<div class="col-md-3 mb-4">

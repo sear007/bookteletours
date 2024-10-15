@@ -6,6 +6,9 @@
                     <div class="vacation-offer-details">
                         <h1>{{$title}}</h1>
                         <h4>{{$subTitle}}</h4>
+                        @if(isset($text))
+                            <p>{{$text}}</p>
+                        @endif
                     </div>
                 </div>
             </div>

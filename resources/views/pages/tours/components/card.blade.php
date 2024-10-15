@@ -1,7 +1,7 @@
 <div class="__card">
     <a href="{{route('tour.show', ['tourId'=>$post->id])}}"></a>
     <div class="img_container">
-        <img src="{{env('LINK_PATH_SHOW_TOUR_IMAGE')}}{{$post->featureImage->filename}}"/>
+        <img src="{{env('LINK_PATH_SHOW_TOUR_IMAGE')}}{{$post->photo}}"/>
     </div>
     <div class="info_container">
         <div class="box-info">

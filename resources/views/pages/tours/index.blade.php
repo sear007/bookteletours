@@ -1,7 +1,11 @@
 @extends('layouts.app')
 @section('title', 'TeleTour || Hotel Master\'s Rooms')
 @section('content')
-  @include('components.banner', ['title' => '', 'subTitle' => 'Place to visit', 'background' => ''])
+  @include('components.banner', [
+	'title' => '', 
+	'subTitle' => '', 
+	'text' => 'At Tele Tours, we specialize in providing exceptional and unique experiences. We streamline your planning process by handpicking only the best value and distinctive offerings for our platform. Explore the options that resonate with you and book your extraordinary adventure today!', 
+	'background' => ''])
   <div class="container">
       <div class="p-2"></div>
       @include('components.forms.filter_site')
@@ -9,6 +13,9 @@
   <div class="ftco-section ftco-no-pb ftco-room content-rooms">
 		<div class="container-fluid px-0">
 			<div class="container">
+				<div class="heading-section text-center ftco-animate">
+					<h2 class="mb-4">Popular tours and unique experiences</h2>
+				</div>
 				<div class="row">
 					@forelse($tours as $key => $tour)
 						<div class="col-md-3 mb-4">

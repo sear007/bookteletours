@@ -8,7 +8,8 @@
     ])
 
     <div class="container container-show-page mt-3">
-        <div class="p-3 bg-white shadow">
+	<div class="p-3 bg-white shadow">
+		
           <div class="row">
             @include('pages.tours.components.step', ['step'=> 1])
             <div class="col-md-8">

@@ -16,11 +16,11 @@
         <div id="input-popular-destination__drop" class="__drop-down"></div>
     </div>
     <div class="dropdown">
-        <button id="option_filter_by_button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Visit</button>
+        <button id="option_filter_by_button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Looking for</button>
         <div class="dropdown-menu" id="option_filter_by_dropwdown">
+            <a target="filter_tours_url" id="option_filter_by_tours" class="dropdown-item font-weight-bold" href="#"><i class="fa fa-caret-right mr-2"></i> Thing to do</a>
             <a target="filter_hotels_url" id="option_filter_by_hotels" class="dropdown-item font-weight-bold" href="#"><i class="fa fa-caret-right mr-2"></i> Place to stay</a>
             <a target="filter_sites_url" id="option_filter_by_sites" class="dropdown-item font-weight-bold" href="#"><i class="fa fa-caret-right mr-2"></i> Place to visit</a>
-          <a target="filter_tours_url" id="option_filter_by_tours" class="dropdown-item font-weight-bold" href="#"><i class="fa fa-caret-right mr-2"></i> Things to do</a>
         </div>
       </div>
     <button type="submit" class="btn-search">search</button>

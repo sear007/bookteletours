@@ -1,7 +1,12 @@
 @extends('layouts.app')
 @section('title', 'TeleTour || Hotel Master\'s Rooms')
 @section('content')
-	@include('components.banner', ['title' => '', 'subTitle' => 'Place to visit', 'background' => ''])
+	@include('components.banner', [
+		'title' => '', 
+		'subTitle' => '', 
+		'text' => 'Discover the latest tourism attractions in every city across Cambodia right here. Simply select the city you wish to explore, and access comprehensive information on all the updated sites, including details about their locations and contact information. This ensures you are well-informed about each attraction before making your travel decisions.',
+		'background' => ''
+	])
 	<div class="container">
 		<div class="p-2"></div>
 		@include('components.forms.filter_site')
@@ -9,6 +14,9 @@
 	<div class="ftco-section ftco-no-pb ftco-room content-rooms">
 		<div class="container-fluid px-0">
 			<div class="container">
+				<div class="heading-section text-center ftco-animate">
+					<h2 class="mb-4">Popular tourism sites</h2>
+				</div>
 				<div class="row">
 					@forelse($sites as $key => $site)
 						<div class="col-md-3 mb-4">
